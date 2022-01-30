@@ -15,15 +15,16 @@
                 );
                 fu.progress(function(e){
                     document.querySelector('progress#progress').value=parseInt(e.percentage);
+                    document.querySelector('progressValue#progressvalue').textContent=parseInt(e.percentage);
                     console.log('%'+e.percentage+' uploaded');
                 });
                 fu.error(function(e){
                     console.log(e.message);
-                    alert(e.message);
+                    alert("Fehler beim ochladen der Datei. Bitte senden Sie die Datei per Mail an uns. Danke. Fehler: " + e.message);
                 });
                 fu.successful(function(e){
                     console.log('Successful');
-                    alert('Successful');
+                    alert('Upload war erfolgreich');
                 });
                 document.querySelector('form#file').onsubmit=function(){
                     console.log(fu.info());
@@ -59,15 +60,15 @@
 
         progress::-webkit-progress-value {
         background-image:
-            -webkit-linear-gradient(-45deg, 
-                                    transparent 33%, rgba(0, 0, 0, .1) 33%, 
+            -webkit-linear-gradient(-45deg,
+                                    transparent 33%, rgba(0, 0, 0, .1) 33%,
                                     rgba(0,0, 0, .1) 66%, transparent 66%),
-            -webkit-linear-gradient(top, 
-                                    rgba(255, 255, 255, .25), 
+            -webkit-linear-gradient(top,
+                                    rgba(255, 255, 255, .25),
                                     rgba(0, 0, 0, .25)),
             -webkit-linear-gradient(left, #09c, #f44);
 
-            border-radius: 20px; 
+            border-radius: 20px;
             background-size: 35px 20px, 100% 100%, 100% 100%;
             -webkit-animation: animate-stripes 0.1s linear infinite;
                 animation: animate-stripes 0.1s linear infinite;
@@ -79,6 +80,7 @@
         <input type="file"/>
         <input type="submit" value="Upload File"/>
         <progress value="0" max="100" id="progress"></progress>
+        <progressvalue id="progressvalue">0</progressvalue>%
     </form>
 </body>
 </html>
