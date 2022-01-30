@@ -1,3 +1,8 @@
+<?php
+
+function get_template($content = "")
+{
+    return '
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -21,10 +26,13 @@
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-
+  <h1>Open Bike Sensor - Dresden</h1>
+  ' .$content. '
+  <footer>
+    <a href="impress.html"></a>Impressum
+  </footer>
 </body>
 
 </html>
+';
+}
