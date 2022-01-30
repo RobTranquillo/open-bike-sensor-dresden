@@ -10,12 +10,8 @@ require('php/content.php');
 
 switch ($_SERVER["REQUEST_URI"])
 {
-  case 'impress':
+  case '/impress':
     $content = get_impress();
-    break;
-
-  case 'upload':
-    $content = get_upload();
     break;
 
   default:

@@ -1,0 +1,23 @@
+body {
+    margin: 3rem;
+}
+
+footer {
+    position : fixed;
+    bottom: 0px;
+}
+
+iframe {
+    display: block;
+    border-style:none;
+    min-width: 600px;
+    max-width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgba(5, 121, 175, 0.432);
+}
+
+ol, ul {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
