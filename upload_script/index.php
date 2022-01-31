@@ -73,6 +73,10 @@
             -webkit-animation: animate-stripes 0.1s linear infinite;
                 animation: animate-stripes 0.1s linear infinite;
         }
+
+        form input {
+            display : block;
+        }
     </style>
 </head>
 <body>
