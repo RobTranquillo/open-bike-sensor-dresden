@@ -30,7 +30,7 @@ function get_template($content = "")
   <h1>Open Bike Sensor - Dresden</h1>
   ' .$content. '
   <footer>
-    <a href="/impress">Impressum</a>
+    <a href="?p=impress">Impressum</a>
   </footer>
 </body>
 

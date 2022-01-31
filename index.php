@@ -9,16 +9,10 @@ if(strstr($_SERVER['SERVER_NAME'], 'localhost') !== false)
 require('php/template.php');
 require('php/content.php');
 
-switch ($_SERVER["REQUEST_URI"])
+if (isset($_GET['p']))
 {
-  case '/impress':
-    $content = get_impress();
-    break;
-
-  default:
-    $content = get_main();
-    break;
+  if ($_GET['p'] == 'impress') $content = get_impress();
 }
+else $content = get_main();
 
 echo get_template($content);
-

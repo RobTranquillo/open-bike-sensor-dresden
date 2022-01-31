@@ -44,14 +44,14 @@ function get_impress()
 {
     return '
     <p>
-        <a href="/">Zurück zur Startseite</a>
+        <a href="index.php">Zurück zur Startseite</a>
     </p>
 
     <h2>Impressum</h2>
 
     <p>
         Diese ist eine private Seite, mit der keinerlei finanzielles Interesse verfolgt wird.
-        Es werden neben den spärlichen access logs von https://uberspace.de keine Daten erhoben, gespeichert oder gar ausgewertet.
+        Es werden neben den spärlichen access logs von des web hosters <a href="https://uberspace.de">uberspace</a> keine weiteren Daten erhoben, gespeichert oder gar ausgewertet.
     </p>
 
     <p>
