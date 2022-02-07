@@ -35,7 +35,7 @@ function get_main()
     </iframe>
     <p>
 
-        Vielen für Deine Mithilfe.
+        Vielen Dank für Deine Mithilfe.
     </p>
     ';
 }
