@@ -13,6 +13,7 @@ footer {
     bottom: 0px;
     background-color: rgb(213, 213, 230);
     width: 100%;
+    max-width: 112rem;
     height: 3rem;
     padding-left: 3rem;
 }
